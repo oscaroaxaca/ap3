@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<style type="text/css">
+body {
+	background-image: url(imagenes/nature.jpg);
+	background-repeat: no-repeat;
+}
+</style>
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/contaminacion-atmosferica-foro-ambiental.jpg','imagenes/ecologia-gases-contaminacion-001.jpg','imagenes/contaminacion-visual.jpg','imagenes/Definicion-y-limpieza-basura-espacial.jpg','imagenes/cropped-fondos-paisajes-1024.jpg','imagenes/Reduce-Reutiliza-Recicle-Tres-Rs-de-Sostenibilidad.jpg','imagenes/prevencion.jpg','imagenes/mex-enfrenta-1.jpg','imagenes/PREVNCION.png','imagenes/contaminaciontermal.jpg')">
+
+<div data-role="page" id="Principal">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Contaminacion</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/2455.600x450.jpg" alt="2455.600x450" title="2455.600x450" id="wows1_1"/></li>
+		<li><img src="data1/images/945083_600338236673247_1166298164_n.jpg" alt="945083_600338236673247_1166298164_n" title="945083_600338236673247_1166298164_n" id="wows1_2"/></li>
+		<li><img src="data1/images/basura_quemada960x500.jpg" alt="Basura_Quemada-960x500" title="Basura_Quemada-960x500" id="wows1_3"/></li>
+		<li><img src="data1/images/bicicletasciudades644x362.jpg" alt="bicicletas-ciudades--644x362" title="bicicletas-ciudades--644x362" id="wows1_4"/></li>
+		<li><img src="data1/images/contaminacion_visual_3.jpg" alt="contaminacion visual 3" title="contaminacion visual 3" id="wows1_5"/></li>
+		<li><img src="data1/images/contaminacionatmosfericaforoambiental.jpg" alt="contaminacion-atmosferica-foro-ambiental" title="contaminacion-atmosferica-foro-ambiental" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminaciontermal.jpg" alt="wow slider" title="contaminaciontermal" id="wows1_7"/></a></li>
+		<li><img src="data1/images/contaminacionvisual.jpg" alt="contaminacion-visual" title="contaminacion-visual" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+		<a href="#" title="2455.600x450"><span><img src="data1/tooltips/2455.600x450.jpg" alt="2455.600x450"/>2</span></a>
+		<a href="#" title="945083_600338236673247_1166298164_n"><span><img src="data1/tooltips/945083_600338236673247_1166298164_n.jpg" alt="945083_600338236673247_1166298164_n"/>3</span></a>
+		<a href="#" title="Basura_Quemada-960x500"><span><img src="data1/tooltips/basura_quemada960x500.jpg" alt="Basura_Quemada-960x500"/>4</span></a>
+		<a href="#" title="bicicletas-ciudades--644x362"><span><img src="data1/tooltips/bicicletasciudades644x362.jpg" alt="bicicletas-ciudades--644x362"/>5</span></a>
+		<a href="#" title="contaminacion visual 3"><span><img src="data1/tooltips/contaminacion_visual_3.jpg" alt="contaminacion visual 3"/>6</span></a>
+		<a href="#" title="contaminacion-atmosferica-foro-ambiental"><span><img src="data1/tooltips/contaminacionatmosfericaforoambiental.jpg" alt="contaminacion-atmosferica-foro-ambiental"/>7</span></a>
+		<a href="#" title="contaminaciontermal"><span><img src="data1/tooltips/contaminaciontermal.jpg" alt="contaminaciontermal"/>8</span></a>
+		<a href="#" title="contaminacion-visual"><span><img src="data1/tooltips/contaminacionvisual.jpg" alt="contaminacion-visual"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación</h2>
+<p>Se muestra la definicion </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminación</h2>
+<p>Se muestran tipos de contaminacion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de la contaminación</h2>
+<p>Se muestra algunas consecuencias de la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>El reciclaje</h2>
+<p>Se muestra la Ley de las 3r</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas preventivas</h2>
+<p>Se muestranmedidas preventivas y paginas web que apoyan esto</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Mi propuesta (contaminacion en mi comunidad)</h2>
+<p>Se muestra algunas propuestas</p>
+</a>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicación Tres</h4>
+<h4>Oscar Oaxaca Telez</h4
+></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Contaminacion</h1>
+<p>La contaminación es la introducción de sustancias u otros  elementos físicos en un medio que provocan que éste sea inseguro o no apto para  su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El  contaminante puede ser una sustancia química, energía (como sonido, calor, luz  o radiactividad).</p>
+<p>Es siempre una alteración negativa del estado natural del  medio, y por lo general, se genera como consecuencia de la actividad humana  considerándose una forma de impacto ambiental.</p>
+<p>La contaminación puede clasificarse según el tipo de fuente  de donde proviene, o por la forma de contaminante que emite o medio que  contamina. Existen muchos agentes contaminantes entre ellos las sustancias  químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos  urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir  enfermedades, daños en los ecosistemas o el medioambiente. Además existen  muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos  atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa  de ozono, y el cambio climático.</p>
+<p>Hay muchas formas de combatir la contaminación, y  legislaciones internacionales que regulan las emisiones contaminantes de los  países que adhieren estas políticas. La contaminación está generalmente ligada  al desarrollo económico y social. Actualmente muchas organizaciones  internacionales como la ONU ubican al desarrollo sostenible como una de las  formas de proteger al medioambiente para las actuales y futuras generaciones.</p>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen </h1>
+<div>
+<p>Contaminación: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/contaminacion-atmosferica-foro-ambiental.jpg',1)"><img src="imagenes/Basura_Quemada-960x500.jpg" width="431" height="284" id="Image11"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Contaminación: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('88','','imagenes/ecologia-gases-contaminacion-001.jpg',1)"><img src="imagenes/contingencia-ambiental-624x351.jpg" width="428" height="299" id="88"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+
+
+<div data-role="content">
+<div>
+<h2>&nbsp;</h2>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres,OOT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Tipos de contaminación </h1>
+<p>Contaminación atmosférica<br>
+  Consiste en la liberación de sustancias químicas y  partículas en la atmósfera alterando su composición y suponiendo un riesgo para  la salud de las personas y de los demás seres vivos. Los gases contaminantes  del aire más comunes son el monóxido de carbono, el dióxido de azufre, los  clorofluorocarbonos y los óxidos de nitrógeno producidos por la industria y por  los gases producidos en la combustión de los vehículos. Los fotoquímicos como  el ozono y el esmog se aumentan en el aire por los óxidos del nitrógeno e  hidrocarburos y reaccionan a la luz solar. El material particulado o el polvo  contaminante en el aire se mide por su tamaño en micrómetros, y es común en  erupciones volcánicas. La contaminación atmosférica puede tener un carácter  local, cuando los efectos ligados al foco de emisión afectan solo a las  inmediaciones del mismo, o un carácter global, cuando las características del  contaminante afectan al equilibrio del planeta y zonas muy distantes a los  focos emisores, ejemplos de esto son la lluvia ácida y el calentamiento global.</p>
+<p>Contaminación hídrica<br>
+  Se da por la liberación de residuos y contaminantes que  drenan a las escorrentías y luego son transportados hacia ríos, penetrando en  aguas subterráneas o descargando en lagos o mares. Por derrames o descargas de  aguas residuales, eutrofización o descarga de basura. O por liberación  descontrolada del gas de invernadero CO2 que produce la acidificación de los  océanos. Los desechos marinos son desechos mayormente plásticos que contaminan  los océanos y costas, algunas veces se acumulan en alta mar como en la gran  mancha de basura del Pacífico Norte. Los derrames de petróleo en mar abierto  por el hundimiento o fugas en petroleros y algunas veces derrames desde el  mismo pozo petrolero.</p>
+<p>Basura espacial<br>
+Esta basura que orbita alrededor de la Tierra se compone de  restos de cohetes y satélites viejos, restos de explosiones y pequeñas  partículas artificiales. Esta basura puede generar serios daños en los  satélites en funcionamiento, ya que los impactos a velocidades orbitales pueden  transformar a los satélites funcionales en más basura espacial produciendo un  proceso llamado Síndrome de Kessler.</p>
+<p>Contaminación radiactiva<br>
+  Resultado de las actividades en física atómica desde el  siglo XX, puede ser resultado de graves desperfectos en plantas nucleares o por  investigaciones en bombas nucleares, también por la manufactura y uso  materiales radioactivos. (Ver emisores de partículas alfa) La Contaminación  radiactiva se trata más ampliamente en este artículo en la sección Radiación  ionizante.</p>
+<p>&nbsp;</p>
+<p>Contaminación visual<br>
+  Que puede referirse a la presencia de torres para el  transporte de energía eléctrica, Vallas publicitarias en carreteras y avenidas,  accidentes geográficos como las &quot;cicatrices&quot; producidas por la  minería a cielo abierto, también por los vertederos a cielo abierto.</p>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Contaminación Visual : </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('43','','imagenes/contaminacion-visual.jpg',1)"><img src="imagenes/contaminacion visual 3.jpg" width="428" height="350" id="43"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Contaminación hidrica y espacial: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('45','','imagenes/Definicion-y-limpieza-basura-espacial.jpg',1)"><img src="imagenes/contaminaciontermal.jpg" width="428" height="292" id="45"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+
+
+<div data-role="content" >
+<div>
+<h2>&nbsp;</h2></div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, OOT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Consecuencias de la contaminación  (calentamiento global)</h1>
+<p>Sequías, huracanes, hambre, pobreza y destrucción: estas son  algunas de las terribles consecuencias que el calentamiento global provoca en  nuestro planeta. Y en nuestra mano está participar activamente para frenar sus  efectos si queremos que las siguientes generaciones hereden un mundo tal y como  lo conocemos hoy. O mejor.</p>
+<p>Proteger el medio ambiente es importantísimo. Hoy queremos  explicarte cuáles son 10 de los efectos más importantes del calentamiento  global, para que tomes conciencia de los niveles a que afecta.</p>
+<p>1. Temperaturas más cálidas<br>
+La acumulación de gases contaminantes hace que las  temperaturas aumenten cada vez más y que los climas cambien: esto provoca  sequías y, además, aumenta el riesgo de incendios que conllevan la  deforestación y la desertización del planeta. </p>
+<p>En 2012, los países del Sahel, en el norte de África,  sufrieron una crisis alimentaria que afectó a unos 18 millones de personas  debido a la escasez de lluvias. Los efectos de la sequía no son nuevos en esta  zona, que viene sufriendo sequías recurrentes de forma periódica pero sí lo son  la intensidad y la frecuencia de las mismas, que se han incrementado durante la  última década como consecuencia del aumento de las temperaturas en el planeta. </p>
+<p>2. Tormentas más intensas<br>
+  El hecho de que las temperaturas sean más altas hace que las  lluvias sean menos frecuentes, pero que sean más intensas; por tanto, el nivel  de inundaciones y su gravedad también irán en aumento.</p>
+<p>3. Propagación de enfermedades<br>
+  Un cambio de temperatura de varios grados puede hacer que la  zona templada se haga más acogedora a la propagación de determinadas  enfermedades. De esta manera, pueden empezar a darse casos de mal de Chagas, el  dengue u otras enfermedades que están olvidadas en los países desarrollados y  en zonas que tradicionalmente han sido más frías. </p>
+<p>Este hecho afecta también a los países en desarrollo. Un  estudio de casos en Etiopía realizado por científicos de las universidades de  Denver (UD) y Michigan (UM), concluyó que el aumento de un solo grado en la  temperatura del ambiente tiene como consecuencia el desarrollo de 3 millones de  casos de malaria más en Etiopía en pacientes de menos de 15 años.</p>
+<p>4. Olas de calor más fuertes<br>
+  El calentamiento global del planeta producido por la quema  acelerada de combustibles fósiles agotables ha sido muy intenso en el Polo  Norte. Esto hace que el Polo Norte esté hoy mucho más caliente que hace  cincuenta años. La salud e incluso la vida de miles de personas pueden verse en  riesgo debido al aumento de las olas de calor, tanto en lo que se refiere a frecuencia  como a intensidad.</p>
+<p>5. Derretimiento de los glaciares<br>
+  Océanos con temperaturas más altas son océanos que derriten  el hielo de los casquetes polares: esto significa que aumenta el nivel del mar.</p>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Calentamiento global: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('34','','imagenes/cropped-fondos-paisajes-1024.jpg',1)"><img src="imagenes/2455.600x450.jpg" width="429" height="320" id="34"></a><br>
+</div>
+<div></div>
+</div>
+</div> 
+
+<div data-role="content" >
+<div>
+<h1>&nbsp;</h1>
+</div></div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, OOT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Las 3r</h1>
+<p>REGLA DE LAS 3R<br>
+  ¿Qué es la Regla  de las Tres Erres?<br>
+  La regla de las tres erres, o mejor conocida como las tres  erres de la ecología, internacionalmente se reconoce la terminología de las  Tres Eres o &quot;3 –R&quot; refiriéndose a las tres letras de las tres palabras  que son: REDUCIR, REUTILIZAR, RECICLAR. Cada una de ellas tiene su debido  significado.<br>
+  Durante la Cumbre del G8 en junio de 2004, el Primer  Ministro del Japón, Koizumi Junichiro, presentó la Iniciativa tres erres que  busca construir una sociedad orientada hacia el reciclaje. En abril de 2005 se  llevó a cabo una asamblea de ministros en la que se discutió con Estados  Unidos, Alemania, Francia y otros 20 países la manera en que se puede  implementar de manera internacional acciones relacionadas a las tres erres.</p>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Las 3r: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('12','','imagenes/Reduce-Reutiliza-Recicle-Tres-Rs-de-Sostenibilidad.jpg',1)"><img src="imagenes/reciclado.jpg" width="428" height="297" id="12"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content"> </div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>imagen</h1>
+<div>
+<p>Clasificación: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('13','','imagenes/Reduce-Reutiliza-Recicle-Tres-Rs-de-Sostenibilidad.jpg',1)"><img src="imagenes/reciclaje.jpg" width="428" height="301" id="13"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Aplicacion Tres, OOT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Medidas Preventivas </h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>medidas: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('58','','imagenes/prevencion.jpg',1)"><img src="imagenes/945083_600338236673247_1166298164_n.jpg" width="428" height="309" id="58"></a><br>
+</div>
+<div></div>
+</div>
+</div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>imagen: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('685','','imagenes/mex-enfrenta-1.jpg',1)"><img src="imagenes/bicicletas-ciudades--644x362.jpg" width="428" height="274" id="685"></a><br>
+</div>
+<div></div>
+</div>
+</div> 
+
+<div data-role="content">
+<div>
+  <div><strong>Medidas a tomar para evitar la Contaminación Ambiental.</strong></div>
+  <div>
+    <ul>
+      <li>Crear conciencia ciudadana.</li>
+      <li>No quemar ni talar plantas.</li>
+      <li>Colocar la basura en los lugares apropiados.</li>
+      <li>Regular el servicio de aseo urbano.</li>
+      <li>Controlar el uso de fertilizantes y pesticidas</li>
+    </ul>
+  </div>
+  <h1>Paginas que hablan sobre la contaminacion </h1>
+  <p><a href="http://blog.oxfamintermon.org/10-consecuencias-del-calentamiento-global/" target="_self">OXFAM</a></p>
+  <p><a href="http://www.laondaverde.org/laondaverde/globalwarming/fcons.asp" target="_self">La onda Verde </a></p>
+  <p><a href="http://elblogverde.com/calentamiento-global-consecuencias/" target="_self">ELBlogverde</a></p>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, OOT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Propuesta para reducir la contaminación en mi comunidad</h1>
+<p>Mi propuesta es </p>
+<p>Crear conciencia ciudadana: reflexionar sobre el futuro de nuestro planeta , llevar a cabo algunos puntos</p>
+<p>En mi comunidad se encuentran varios aspectos en los que se debe preocupar , como la quema de llantas , basura , el desalojo de basura inorganica en los espacios verdes , </p>
+<p>La quema de conbustibles, la introduccion de sustancias toxicas en los rios, lagunas, canales.</p>
+<p>Mi propuesta</p>
+<ul>
+  <li>Crear conciencia ciudadana.</li>
+  <li>No quemar ni talar plantas.</li>
+  <li>Colocar la basura en los lugares apropiados.</li>
+  <li>Regular el servicio de aseo urbano.</li>
+  <li>Controlar el uso de fertilizantes y pesticidas</li>
+</ul>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('8700','','imagenes/contaminaciontermal.jpg',1)"><img src="imagenes/image024.jpg" width="428" height="330" id="8700"></a></p>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>imagen: </p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('9789','','imagenes/hqdefault (1).jpg',0)"><img src="imagenes/1.jpg" width="434" height="274" id="9789"></a><br>
+</p>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content"> </div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>imagen</h1>
+<div>
+<p>imagen: </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('454','','imagenes/PREVNCION.png',1)"><img src="imagenes/MUNDO_SUCIO.jpg" width="434" height="330" id="454"></a><br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Aplicacion Tres, OOT</h4>
+</div>
+</div>
+
+</body>
+</html>
